@@ -1,0 +1,101 @@
+@charset "UTF-8";
+ body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fef6e4; /* Warm beige */
+            color: #4b3832; /* Warm brown */
+        }
+
+        /* Header Section */
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        header img {
+            width: 100%;
+            height: auto;
+            filter: brightness(70%);
+        }
+        header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position:sticky;
+            top:0;
+            display: flex;
+            justify-content: center;
+            background: #ffb347; /* Warm orange */
+            padding: 0.8rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            padding: 0.5rem 1rem;
+        }
+        nav a:hover {
+            background: #e69532;
+            border-radius: 5px;
+        }
+
+        /* Main Content Section */
+        .container {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        .container h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .container p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        .container img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .btn {
+            display: inline-block;
+            margin: 1rem 0.5rem;
+            padding: 0.8rem 2rem;
+            background: #ffb347;
+            color: white;
+            font-size: 1.1rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .btn:hover {
+            background: #e69532;
+            transform: scale(1.05);
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background: #4b3832;
+            color: white;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }

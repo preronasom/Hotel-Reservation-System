@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* getnostyle.css */
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #ffb347; /* Warm beige background */
+    color: #6B4F4F; /* Warm brown for text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+/* Styling the table */
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px 0;
+    background-color: #FFE4C4; /* Bisque table background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+tr{
+	
+	width: 50%;
+}
+
+th, td {
+    border: 1px solid #D3A17E; /* Warm border shade */
+    padding: 10px;
+    text-align: center;
+}
+
+
+td {
+    color: #6B4F4F;
+}
+
+/* Adding hover effects to rows */
+tr:hover {
+    background-color: #FFDAB9; /* Peach puff on hover */
+}
+
+/* Styling the "Back to Dashboard" button */
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #D2691E; /* Warm chocolate shade */
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-btn:hover {
+    background-color: #A0522D; /* Darker chocolate shade on hover */
+    transform: translateY(-3px);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .back-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
